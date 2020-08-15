@@ -145,7 +145,7 @@ rem 调用ffmpeg进行转换
 ffmpeg -hide_banner -y ^
  -stream_loop !loop! ^
  -i !gifFile! ^
- -vcodec prores_ks -pix_fmt yuva444p10le -profile:v 4444^
+ -vcodec prores_ks -pix_fmt yuva444p10le -profile:v 4444 ^
  -acodec copy ^
  -s 1920x1080 -r !fps! ^
  -vf "scale=!w!:!h!,pad=1920:1080:!x!:!y!:0x00000000" ^
