@@ -6,8 +6,10 @@ docker辅助工具
 
 ## 使用
 ```shell
+cd ~
+
 # 下载脚本
-wget https://raw.githubusercontent.com/hufang360/bash/master/Docker/dockerctl.py
+wget -N https://raw.githubusercontent.com/hufang360/bash/master/Docker/dockerctl.py
 
 # 设置脚本为可执行
 chmod +x dockerctl.py
