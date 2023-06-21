@@ -66,12 +66,9 @@ class Main:
         if( infoJson=="" ):
             return
         dirPath = infoJson[0]["GraphDriver"]["Data"]["MergedDir"]
-        # os.chdir(dirPath)
-        # shell = os.environ.get('SHELL', '/bin/sh')
-        # os.execl(shell, shell)
-        print("请手动执行切换工作目录操作")
-        print("cd "+dirPath)
-
+        os.chdir(dirPath)
+        shell = os.environ.get('SHELL', '/bin/bash')
+        os.execl(shell, shell)
 
     def dockerInfo(self, conName):
         """查看docker 容器信息
